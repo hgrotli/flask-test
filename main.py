@@ -61,7 +61,7 @@ mongodb+srv://vegardstamadsen:zvNcYlvVwuE1ScJv@cluster0.bomsogj.mongodb.net/?ret
 
 
 app = Flask("Api")
-CORS(app)
+
 
 # Simulated database
 CONTACTS =[]
