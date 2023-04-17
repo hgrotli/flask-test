@@ -10,7 +10,7 @@ from flask import Response
 from bson import json_util
 import os
 
-#test
+#test 
 
 print("hei")
 # print(json_text)
@@ -23,24 +23,16 @@ print("hei")
 
 #mongodb+srv://vegardstamadsen:zvNcYlvVwuE1ScJv@cluster0.bomsogj.mongodb.net/test
 try:
-    # Connect to MongoDB
+    
     client = pymongo.MongoClient("mongodb+srv://vegardstamadsen:zvNcYlvVwuE1ScJv@cluster0.bomsogj.mongodb.net/test", tlsCAFile=certifi.where())
     print("Connected to MongoDB")
 
-    # Select database
+   
     mydb = client["CloudContacts"]
 
-    # Select collection
+   
     mycol = mydb["Contacts"]
 
-    # Define document to be inserted
-   # mydoc = {"name": "Johnnybot", "address": "Highway 39"}
-
-    # Insert document into collection
-   # x = mycol.insert_one(mydoc)
-
-    # Print the ObjectID of the inserted document
-   # print(x.inserted_id)
   
 
 except Exception as e:
