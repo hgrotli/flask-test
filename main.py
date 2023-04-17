@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template
 from flask import jsonify
-from flask_cors import CORS
 import vobject
 import json
 from pymongo import MongoClient
