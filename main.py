@@ -323,4 +323,4 @@ if __name__ == '__main__':
     was imported as a module and not as a script. I.e. the code in this if does
     not run if the file is imported as a module.'''
 
-app.run(debug=True, port=os.getenv("PORT", default=5000))
+    app.run(host='0.0.0.0', port=6438)
