@@ -18,10 +18,6 @@ print("hei")
 
 
 
-
-
-
-
 #mongodb+srv://vegardstamadsen:zvNcYlvVwuE1ScJv@cluster0.bomsogj.mongodb.net/test
 try:
     
