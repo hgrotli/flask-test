@@ -48,11 +48,14 @@ cors = CORS(app)
 # Simulated database
 CONTACTS =[]
 contactsMy = []
-
-
 contacts = []
 
+
 # Load the JSON data from file
+
+
+
+
 
 
 
