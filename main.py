@@ -10,6 +10,7 @@ from flask import Response
 from bson import json_util
 from flask_cors import CORS
 import os
+import requests
 
 #test 
 
@@ -115,6 +116,10 @@ def upload():
             result = mycol.insert_one(MyContact)
             MyData.append(str(result.inserted_id))
             print(MyContact)
+
+             # Trigger an update request to the cache server
+        cache_url = "http://localhost:5555/update_cache"
+        response = requests.get(cache_url)
 
         return jsonify({'message': MyData}) 
         
