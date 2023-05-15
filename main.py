@@ -12,6 +12,8 @@ from flask_cors import CORS
 import os
 import requests
 
+API_KEY = "admin0"
+
 #test 
 
 print("hei")
@@ -71,6 +73,8 @@ MyData = []
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     
+    if request.headers.get('admin0') != API_KEY:
+        return jsonify({'message': 'Invalid API key'})
 
     
    
@@ -129,7 +133,10 @@ def upload():
         
     
 @app.route('/contacts/vcard')
+
 def get_contacts_vcard():
+
+
     try:
         
         contacts = list(mycol.find())
