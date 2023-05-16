@@ -12,7 +12,7 @@ from flask_cors import CORS
 import os
 import requests
 
-API_KEY = "admin0"
+API_KEY3 = "upload"
 
 #test 
 
@@ -73,9 +73,7 @@ MyData = []
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     
-    if request.headers.get('admin0') != API_KEY:
-        return jsonify({'message': 'Invalid API key'})
-
+    
     
    
     if request.method == 'POST':
