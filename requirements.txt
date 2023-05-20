@@ -10,3 +10,8 @@ vobject
 pymongo
 certifi
 bson
+pytest
+mypy
+flake8
+tox
+
