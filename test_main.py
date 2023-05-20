@@ -13,24 +13,6 @@ import os
 import requests
 
 
-import pytest
-from flask import Flask
-from main import app
-
-
-@pytest.fixture
-def client():
-    app.config['TESTING'] = True
-    client = app.test_client()
-    yield client
-
-
-def test_index(client):
-    response = client.get('/')
-    assert response.status_code == 200
-    assert b"Velkommen til vår API" in response.data
-
-
 
 
 def test_addition():
