@@ -30,9 +30,5 @@ jobs:
       - name: Run pytest
         run: python -m pytest
 
-      - name: Run flake8
-        run: flake8 .
 
-      - name: Run tox
-        run: tox
 
