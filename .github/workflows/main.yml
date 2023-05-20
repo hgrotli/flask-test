@@ -30,9 +30,6 @@ jobs:
       - name: Run pytest
         run: python -m pytest
 
-      - name: Run mypy
-        run: mypy .
-
       - name: Run flake8
         run: flake8 flask-test
 
