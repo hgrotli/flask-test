@@ -31,7 +31,7 @@ jobs:
         run: python -m pytest
 
       - name: Run flake8
-        run: flake8 flask-test
+        run: flake8 .
 
       - name: Run tox
         run: tox
